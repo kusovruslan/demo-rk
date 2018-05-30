@@ -4,4 +4,4 @@ RUN apt-get update && apt-get install -y python python-pip
 
 COPY app.py /opt/
 
-CMD ["python /opt/app.py"]
+CMD ["chmod +x /opt/app.py && python /opt/app.py"]
