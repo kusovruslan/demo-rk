@@ -1,6 +1,6 @@
-FROM centos:latest
+FROM ubuntu:16.04
 
-RUN yum install python python-pip
+RUN apt-get update && apt-get install python python-pip
 
 COPY app.py /opt/
 
