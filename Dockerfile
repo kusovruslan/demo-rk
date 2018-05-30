@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-USER 0:0
+USER 1000:100
 
 RUN apt-get update && apt-get install python python-pip
 
