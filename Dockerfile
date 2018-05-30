@@ -1,8 +1,6 @@
-FROM ubuntu:16.04
-ARG HOST_USER_UID=1000
-ARG HOST_USER_GID=1000
+FROM centos:latest
 
-RUN apt-get update && apt-get install python python-pip
+RUN yum install python python-pip
 
 COPY app.py /opt/
 
