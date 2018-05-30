@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-USER node
+USER 1000
 
 RUN apt-get update && apt-get install python python-pip
 
